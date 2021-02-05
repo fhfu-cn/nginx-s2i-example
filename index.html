@@ -12,5 +12,10 @@
   
   <h1> Hello Ngxix </h1>
   <h4> 从源代码编译构建为image，基于open shift S2I 构建的nginx镜像 </h4>
+  
+  s2i build  https://github.com/fhfu-cn/nginx-s2i-example.git  registry.redhat.io/rhel8/nginx-116:latest  nginx-s2i-example
+  docker run -p 8080:8080 nginx-s2i-example
+
+
  </body>
 </html>
